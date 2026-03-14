@@ -7,6 +7,10 @@
 | Command | Fungsi                      | progress |
 | ------- | --------------------------- |----------|
 | `notify`    | Send Message Display like (MSG)                  | ok |
+| `whoami`    | Display Hostname\Username                  | ok |
+| `sptest`    | Speaker Test Stereo                  | ok |
+| `xbrightnes`    | Set External Monitor Brightnes                  | ok |
+
 
 
 ### Tools filesystem dasar (paling penting)

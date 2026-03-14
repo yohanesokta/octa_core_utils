@@ -1,19 +1,17 @@
+#include <windows.h>
 #include <stdio.h>
 
-#ifdef _WIN32
-extern char **_environ;
-#define environ _environ
-#else
-extern char **environ;
-#endif
-
 int main() {
-    char **env = environ;
 
-    while (*env) {
-        printf("%s\n", *env);
-        env++;
+    LPCH env = GetEnvironmentStringsA();
+    LPCH var = env;
+
+    while (*var) {
+        printf("%s\n", var);
+        var += strlen(var) + 1;
     }
+
+    FreeEnvironmentStringsA(env);
 
     return 0;
 }
