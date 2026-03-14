@@ -1,24 +1,33 @@
 # OCTA CORE Utils
 
+
+### OctaCore Independent Utility
+
+
+| Command | Fungsi                      | progress |
+| ------- | --------------------------- |----------|
+| `notify`    | Send Message Display like (MSG)                  | ok |
+
+
 ### Tools filesystem dasar (paling penting)
 
 
-| Command | Fungsi                      |
-| ------- | --------------------------- |
-| `cp`    | copy file                   |
-| `cat`   | tampilkan isi file          |
-| `touch` | buat file kosong            |
-| `mkdir` | buat directory              |
-| `rmdir` | hapus directory kosong      |
-| `pwd`   | tampilkan current directory |
-| `stat`  | info file                   |
-| `du`    | ukuran directory            |
-| `df`    | disk usage                  |
+| Command | Fungsi                      | progress |
+| ------- | --------------------------- |----------|
+| `cp`    | copy file                   | ok |
+| `cat`   | tampilkan isi file          | ok |
+| `touch` | buat file kosong            | ok |
+| `mkdir` | buat directory              | ok |
+| `rmdir` | hapus directory kosong      | ok |
+| `pwd`   | tampilkan current directory | ok |
+| `stat`  | info file                   | ok |
+| `du`    | ukuran directory            | ok |
+| `df`    | disk usage                  | ok |
 
 ---
 
-| Command | Fungsi                     |
-| ------- | -------------------------- |
+| Command | Fungsi                     | progress |
+| ------- | -------------------------- |----------|
 | `head`  | tampilkan N baris pertama  |
 | `tail`  | tampilkan N baris terakhir |
 | `wc`    | hitung line / word         |
@@ -28,9 +37,9 @@
 
 ---
 
-| Command    | Fungsi                  |
-| ---------- | ----------------------- |
-| `which`    | cari executable di PATH |
+| Command    | Fungsi                  | progress |
+| ---------- | ----------------------- |----------|
+| `which`    | cari executable di PATH | ok |
 | `basename` | ambil nama file         |
 | `dirname`  | ambil folder            |
 | `realpath` | absolute path           |
@@ -39,27 +48,27 @@
 
 ### Tools developer
 
-| Command   | Fungsi                         |
-| --------- | ------------------------------ |
+| Command   | Fungsi                         | progress |
+| --------- | ------------------------------ |----------|
 | `hexdump` | lihat file binary              |
 | `strings` | extract string dari binary     |
 | `time`    | ukur runtime program           |
-| `env`     | tampilkan environment variable |
+| `env`     | tampilkan environment variable | ok |
 
 ---
 
 
-| Command | Fungsi           |
-| ------- | ---------------- |
-| `clear` | clear terminal   |
-| `yes`   | print text terus |
+| Command | Fungsi           | progress |
+| ------- | ---------------- |----------|
+| `clear` | clear terminal   | ok |
+| `yes`   | print text terus | ok |
 | `sleep` | delay            |
-| `echo`  | print text       |
+| `echo`  | print text       | ok |
 
 ---
 
-| Tool    | Kegunaan                  |
-| ------- | ------------------------- |
+| Tool    | Kegunaan                  | progress |
+| ------- | ------------------------- |----------|
 | `tree`  | tampilkan struktur folder |
 | `find`  | search file               |
 | `xargs` | pipeline argument         |
@@ -68,20 +77,20 @@
 
 ---
 
-| Tool    | Fungsi                       |
-| ------- | ---------------------------- |
-| `open`  | buka file dengan default app |
+| Tool    | Fungsi                       | progress |
+| ------- | ---------------------------- |----------|
+| `open`  | buka file dengan default app | ok |
 | `trash` | kirim file ke recycle bin    |
 | `clip`  | copy ke clipboard            |
 | `path`  | manage PATH                  |
 
 ---
 
-| Tool      | Kenapa keren           |
-| --------- | ---------------------- |
+| Tool      | Kenapa keren           | progress |
+| --------- | ---------------------- |----------|
 | `grep`    | parsing text           |
 | `find`    | recursive filesystem   |
-| `tree`    | recursion algorithm    |
+| `tree`    | recursion algorithm    | ok |
 | `du`      | disk usage calculation |
 | `hexdump` | binary processing      |
 
