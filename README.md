@@ -1,7 +1,65 @@
 # OCTA CORE Utils
 
+**Octa Core Utils** adalah koleksi utilitas baris perintah (CLI) ringan yang dirancang khusus untuk lingkungan Windows. Proyek ini bertujuan untuk menyediakan fungsi-fungsi dasar sistem operasi yang cepat, portabel, dan mandiri (standalone), mirip dengan GNU Coreutils namun dioptimalkan untuk performa native Windows.
+
+> **Octa Core Utils** is a collection of lightweight command-line utilities (CLI) specifically designed for the Windows environment. This project aims to provide fast, portable, and standalone operating system core functions, similar to GNU Coreutils but optimized for native Windows performance.
+
+## Fitur Utama / Key Features
+
+- **Native Performance:** Ditulis sepenuhnya dalam C/C++ menggunakan Windows API langsung untuk kecepatan maksimal.
+- **Zero Dependencies:** Setiap executable bersifat mandiri (standalone), tidak memerlukan DLL eksternal tambahan.
+- **Lightweight:** Ukuran file sangat kecil karena dioptimalkan untuk efisiensi ruang penyimpanan.
+- **Developer Friendly:** Dirancang untuk mudah diintegrasikan ke dalam workflow terminal atau skrip automasi.
+
+## Cara Membangun dari Sumber / Build From Source
+
+**PASTIKAN UNTUK MASUK KE FOLDER 'cmd' UNTUK BUILD UTILITY**
+
+```bash
+cd cmd
+```
+
+---
+Proyek ini menggunakan **CMake** sebagai sistem build utamanya, yang mendukung berbagai compiler di Windows.
+
+### 1. Menggunakan MinGW (GCC)
+
+Pastikan kamu sudah menginstal MinGW-w64 dan sudah terdaftar di dalam `PATH`.
+
+```bash
+# Masuk ke direktori perintah
+cd cmd
+
+# Jalankan skrip build (jika menggunakan bash/git bash)
+./build.sh
+
+# ATAU secara manual dengan CMake
+mkdir build
+cd build
+cmake -G "MinGW Makefiles" ..
+cmake --build . --config Release
+```
+
+### 2. Menggunakan Visual Studio (MSVC)
+
+Gunakan **Developer Command Prompt for Visual Studio** atau **PowerShell**.
+
+```powershell
+# Buat direktori build
+mkdir build
+cd build
+
+# Konfigurasi dan Build
+cmake ..
+cmake --build . --config Release
+```
+
+Setelah berhasil, file executable akan tersedia di folder `bin/`.
+
+---
 
 ### OctaCore Independent Utility
+
 
 
 | Command | Fungsi                      | progress |
@@ -104,4 +162,3 @@ Ini menunjukkan:
 * parsing argument
 * recursion
 * binary data
-
