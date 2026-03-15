@@ -1,0 +1,73 @@
+===============================
+
+OCTA CORE UTILS HELP DOCUMENTATION
+
+===============================
+Copyright (c) 2026 YohanesOktanio. All rights reserved.
+
+
+cat         - Concatenate and print files.
+              Usage: cat <file...>
+
+clear       - Clear the screen.
+              Usage: clear
+
+cp          - Copy a file.
+              Usage: cp <source> <destination>
+
+df          - Disk free space.
+              Usage: df [path]
+
+du          - Disk usage.
+              Usage: du [path]
+
+env         - List environment variables.
+              Usage: env
+
+ls          - List files.
+              Usage: ls [-a] [-l] [-ll]
+
+mv          - Move/rename a file.
+              Usage: mv <source> <destination>
+
+notify      - Show a message box.
+              Usage: notify [-i|-w|-e|-q] <message>
+
+open        - Open a file, URL, or folder.
+              Usage: open <file|url|folder>
+
+pwd         - Print working directory.
+              Usage: pwd
+
+rm          - Remove files/directories.
+              Usage: rm [-r] [-f] file
+
+rmdir       - Remove directory.
+              Usage: rmdir <directory>
+
+sleep       - Sleep for a given number of seconds.
+              Usage: sleep <seconds>
+
+sptest      - Test speakers (Left and Right).
+              Usage: sptest
+
+stat        - Display file status.
+              Usage: stat <file>
+
+touch       - Create an empty file or update timestamp.
+              Usage: touch <file>
+
+tree        - Display directory tree.
+              Usage: tree [path]
+
+which       - Locate a program in PATH.
+              Usage: which <program>
+
+whoami      - Print current user.
+              Usage: whoami
+
+xbrightnes  - Set monitor brightness (if supported).
+              Usage: brightness <0-100>
+
+yes         - Print "y" or a string repeatedly.
+              Usage: yes [string]
