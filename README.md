@@ -102,11 +102,11 @@ Setelah berhasil, file executable akan tersedia di folder `bin/`.
 | `wc`    | hitung line / word         |
 | `sort`  | sort text                  |
 | `uniq`  | hapus duplicate            |
-| `grep`  | search text                |
+| `grep`  | search text                | ok       |
 
 ---
 
-| Command    | Fungsi                  | progress |
+| Command    | Fungsi                  | progress | 
 | ---------- | ----------------------- | -------- |
 | `which`    | cari executable di PATH | ok       |
 | `basename` | ambil nama file         |
