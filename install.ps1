@@ -49,4 +49,4 @@ foreach (`$t in `$tools) {
 Add-Content $PROFILE $script
 }
 Write-Host "PowerShell profile updated at $PROFILE. Please restart your terminal to apply changes."
-./$installDir/notify.exe -i "OctaCore Tools Installed. Please restart your terminal to apply changes."
+& "$installDir\notify.exe" -i "OctaCore Tools Installed. Please restart your terminal to apply changes."

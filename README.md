@@ -13,7 +13,7 @@
 
 # Cara Install / How To Install
 ### Windows PowerShell
-```ps1
+```bash
 irm https://yohanesokta.github.io/octa_core_utils/install.ps1 | iex
 ```
 Instalasi akan di install di %APPDATA% dan otomatis menambahkan $PATH user di executable. Pastikan untuk restart terminal setelah instalasi
