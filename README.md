@@ -11,6 +11,13 @@
 - **Lightweight:** Ukuran file sangat kecil karena dioptimalkan untuk efisiensi ruang penyimpanan.
 - **Developer Friendly:** Dirancang untuk mudah diintegrasikan ke dalam workflow terminal atau skrip automasi.
 
+# Cara Install / How To Install
+### Windows PowerShell
+```ps1
+irm https://yohanesokta.github.io/octa_core_utils/install.ps1 | iex
+```
+Instalasi akan di install di %APPDATA% dan otomatis menambahkan $PATH user di executable. Pastikan untuk restart terminal setelah instalasi
+
 ## Cara Membangun dari Sumber / Build From Source
 
 **PASTIKAN UNTUK MASUK KE FOLDER 'cmd' UNTUK BUILD UTILITY**
@@ -62,12 +69,12 @@ Setelah berhasil, file executable akan tersedia di folder `bin/`.
 
 
 
-| Command | Fungsi                      | progress |
-| ------- | --------------------------- |----------|
-| `notify`    | Send Message Display like (MSG)                  | ok |
-| `whoami`    | Display Hostname\Username                  | ok |
-| `sptest`    | Speaker Test Stereo                  | ok |
-| `xbrightnes`    | Set External Monitor Brightnes                  | ok |
+| Command      | Fungsi                          | progress |
+| ------------ | ------------------------------- | -------- |
+| `notify`     | Send Message Display like (MSG) | ok       |
+| `whoami`     | Display Hostname\Username       | ok       |
+| `sptest`     | Speaker Test Stereo             | ok       |
+| `xbrightnes` | Set External Monitor Brightnes  | ok       |
 
 
 
@@ -75,21 +82,21 @@ Setelah berhasil, file executable akan tersedia di folder `bin/`.
 
 
 | Command | Fungsi                      | progress |
-| ------- | --------------------------- |----------|
-| `cp`    | copy file                   | ok |
-| `cat`   | tampilkan isi file          | ok |
-| `touch` | buat file kosong            | ok |
-| `mkdir` | buat directory              | ok |
-| `rmdir` | hapus directory kosong      | ok |
-| `pwd`   | tampilkan current directory | ok |
-| `stat`  | info file                   | ok |
-| `du`    | ukuran directory            | ok |
-| `df`    | disk usage                  | ok |
+| ------- | --------------------------- | -------- |
+| `cp`    | copy file                   | ok       |
+| `cat`   | tampilkan isi file          | ok       |
+| `touch` | buat file kosong            | ok       |
+| `mkdir` | buat directory              | ok       |
+| `rmdir` | hapus directory kosong      | ok       |
+| `pwd`   | tampilkan current directory | ok       |
+| `stat`  | info file                   | ok       |
+| `du`    | ukuran directory            | ok       |
+| `df`    | disk usage                  | ok       |
 
 ---
 
 | Command | Fungsi                     | progress |
-| ------- | -------------------------- |----------|
+| ------- | -------------------------- | -------- |
 | `head`  | tampilkan N baris pertama  |
 | `tail`  | tampilkan N baris terakhir |
 | `wc`    | hitung line / word         |
@@ -100,8 +107,8 @@ Setelah berhasil, file executable akan tersedia di folder `bin/`.
 ---
 
 | Command    | Fungsi                  | progress |
-| ---------- | ----------------------- |----------|
-| `which`    | cari executable di PATH | ok |
+| ---------- | ----------------------- | -------- |
+| `which`    | cari executable di PATH | ok       |
 | `basename` | ambil nama file         |
 | `dirname`  | ambil folder            |
 | `realpath` | absolute path           |
@@ -111,26 +118,26 @@ Setelah berhasil, file executable akan tersedia di folder `bin/`.
 ### Tools developer
 
 | Command   | Fungsi                         | progress |
-| --------- | ------------------------------ |----------|
+| --------- | ------------------------------ | -------- |
 | `hexdump` | lihat file binary              |
 | `strings` | extract string dari binary     |
 | `time`    | ukur runtime program           |
-| `env`     | tampilkan environment variable | ok |
+| `env`     | tampilkan environment variable | ok       |
 
 ---
 
 
 | Command | Fungsi           | progress |
-| ------- | ---------------- |----------|
-| `clear` | clear terminal   | ok |
-| `yes`   | print text terus | ok |
+| ------- | ---------------- | -------- |
+| `clear` | clear terminal   | ok       |
+| `yes`   | print text terus | ok       |
 | `sleep` | delay            |
-| `echo`  | print text       | ok |
+| `echo`  | print text       | ok       |
 
 ---
 
 | Tool    | Kegunaan                  | progress |
-| ------- | ------------------------- |----------|
+| ------- | ------------------------- | -------- |
 | `tree`  | tampilkan struktur folder |
 | `find`  | search file               |
 | `xargs` | pipeline argument         |
@@ -140,8 +147,8 @@ Setelah berhasil, file executable akan tersedia di folder `bin/`.
 ---
 
 | Tool    | Fungsi                       | progress |
-| ------- | ---------------------------- |----------|
-| `open`  | buka file dengan default app | ok |
+| ------- | ---------------------------- | -------- |
+| `open`  | buka file dengan default app | ok       |
 | `trash` | kirim file ke recycle bin    |
 | `clip`  | copy ke clipboard            |
 | `path`  | manage PATH                  |
@@ -149,10 +156,10 @@ Setelah berhasil, file executable akan tersedia di folder `bin/`.
 ---
 
 | Tool      | Kenapa keren           | progress |
-| --------- | ---------------------- |----------|
+| --------- | ---------------------- | -------- |
 | `grep`    | parsing text           |
 | `find`    | recursive filesystem   |
-| `tree`    | recursion algorithm    | ok |
+| `tree`    | recursion algorithm    | ok       |
 | `du`      | disk usage calculation |
 | `hexdump` | binary processing      |
 

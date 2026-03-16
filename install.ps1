@@ -35,7 +35,7 @@ if ($profileContent -notmatch "OCTACORE TOOLS") {
 
 $script = @"
 
-# OCTACORE TOOLS
+# OCTACORE TOOLS [v1.0]
 `$tools = @("cat","clear","cp","df","du","env","ls","mv","notify","open","pwd","rm","rmdir","sleep","sptest","stat","touch","tree","which","whoami","yes")
 
 foreach (`$t in `$tools) {
@@ -48,5 +48,5 @@ foreach (`$t in `$tools) {
 
 Add-Content $PROFILE $script
 }
-
 Write-Host "PowerShell profile updated at $PROFILE. Please restart your terminal to apply changes."
+./$installDir/notify.exe -i "OctaCore Tools Installed. Please restart your terminal to apply changes."
