@@ -10,7 +10,7 @@ Description: |
   OctaCore Utils provides common Unix-like commands such as
   ls, cat, cp, mv, rm, touch, tree, and others for Windows.
 
-License: MIT
+License: GNU GPL-3.0
 LicenseUrl: https://github.com/yohanesokta/octa_core_utils/blob/main/LICENSE
 
 Tags:

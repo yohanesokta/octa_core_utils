@@ -1,5 +1,7 @@
-#  script to add : powershell -ExecutionPolicy Bypass -File install.ps1
-$installDir = $PSScriptRoot
+$installDir = Split-Path -Parent $MyInvocation.MyCommand.Path
+
+Write-Host "Installed to $installDir"
+
 $userPath = [Environment]::GetEnvironmentVariable("PATH", "User")
 
 if ($userPath -notlike "*$installDir*") {
@@ -15,8 +17,6 @@ if (!(Test-Path $PROFILE)) {
 }
 
 $profileContent = Get-Content $PROFILE -Raw -ErrorAction SilentlyContinue
-
-$marker = "# OCTACORE TOOLS"
 
 if ($profileContent -notmatch "OCTACORE TOOLS") {
 
