@@ -4,6 +4,20 @@
 
 > **Octa Core Utils** is a collection of lightweight command-line utilities (CLI) specifically designed for the Windows environment. This project aims to provide fast, portable, and standalone operating system core functions, similar to GNU Coreutils but optimized for native Windows performance.
 
+
+
+# Cara Install / How To Install
+
+### Installers (x64)
+
+[![Download for Windows](https://img.shields.io/badge/Download%20for-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://link-download-kamu.exe)
+
+### Windows PowerShell (x86-64)
+```powershell
+irm https://yohanesokta.github.io/octa_core_utils/install.ps1 | iex
+```
+> Instalasi akan di install di %APPDATA% dan otomatis menambahkan $PATH user di executable. Pastikan untuk restart terminal setelah instalasi
+> 
 ## Fitur Utama / Key Features
 
 - **Native Performance:** Ditulis sepenuhnya dalam C/C++ menggunakan Windows API langsung untuk kecepatan maksimal.
@@ -11,14 +25,9 @@
 - **Lightweight:** Ukuran file sangat kecil karena dioptimalkan untuk efisiensi ruang penyimpanan.
 - **Developer Friendly:** Dirancang untuk mudah diintegrasikan ke dalam workflow terminal atau skrip automasi.
 
-# Cara Install / How To Install
-### Windows PowerShell
-```bash
-irm https://yohanesokta.github.io/octa_core_utils/install.ps1 | iex
-```
-Instalasi akan di install di %APPDATA% dan otomatis menambahkan $PATH user di executable. Pastikan untuk restart terminal setelah instalasi
+---
 
-## Cara Membangun dari Sumber / Build From Source
+# Cara Membangun dari Sumber / Build From Source
 
 **PASTIKAN UNTUK MASUK KE FOLDER 'cmd' UNTUK BUILD UTILITY**
 
