@@ -10,7 +10,7 @@
 
 ### Installers (x64)
 
-[![Download for Windows](https://img.shields.io/badge/Download%20for-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://link-download-kamu.exe)
+[![Download for Windows](https://img.shields.io/badge/Download%20for-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/yohanesokta/octa_core_utils/releases/download/1.0/octacore-installer.exe)
 
 ### Windows PowerShell (x86-64)
 ```powershell
