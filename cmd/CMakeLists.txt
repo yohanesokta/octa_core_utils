@@ -10,6 +10,8 @@ set(CMAKE_C_FLAGS_RELEASE "/O2")
 # Set the C++ standard to C++17 for all targets in this directory.
 set(CMAKE_CXX_STANDARD 17)
 
+
+
 project(octa_core_utils_cmd)
 
 file(GLOB TOOLS "*.c")
@@ -23,3 +25,17 @@ endforeach()
 
 include_directories(../docs)
 add_executable(ochelp ../docs/ochelp.c)
+include_directories(../other)
+
+# Building Octacode Executable
+# Using cJSON as a dependency for octacode, which is a lightweight JSON parser in C. This allows octacode to handle JSON data effectively, making it easier to work with configurations or data that may be in JSON format.
+add_library(cjson STATIC
+    ../ext-libs/cJSON/cJSON.c
+)
+
+target_include_directories(cjson PUBLIC
+    ../ext-libs/cJSON
+)
+
+add_executable(octacode ../other/octacode.c)
+target_link_libraries(octacode PRIVATE cjson)
