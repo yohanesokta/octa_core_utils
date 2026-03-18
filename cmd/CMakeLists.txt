@@ -39,3 +39,11 @@ target_include_directories(cjson PUBLIC
 
 add_executable(octacode ../other/octacode.c)
 target_link_libraries(octacode PRIVATE cjson)
+
+include_directories(../other/ntop)
+option(ENABLE_UNICODE "Compile with Unicode support" OFF)
+
+if (ENABLE_UNICODE)
+    add_definitions(-DUNICODE -D_UNICODE)
+endif()
+add_executable(htop ../other/ntop/ntop.c ../other/ntop/util.c ../other/ntop/vi.c )
