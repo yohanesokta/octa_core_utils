@@ -28,11 +28,11 @@ irm https://yohanesokta.github.io/octa_core_utils/install.ps1 | iex
 ---
 
 # Cara Membangun dari Sumber / Build From Source
+> Clone secara recursive untuk mengambil keseluruhan modul, karena beberapa terpisah dan mengambil dari repo lain.
 
-**PASTIKAN UNTUK MASUK KE FOLDER 'cmd' UNTUK BUILD UTILITY**
 
 ```bash
-cd cmd
+git clone  --recurse-submodules https://github.com/yohanesokta/octa_core_utils.git
 ```
 
 ---
@@ -78,12 +78,14 @@ Setelah berhasil, file executable akan tersedia di folder `bin/`.
 
 
 
-| Command      | Fungsi                          | progress |
-| ------------ | ------------------------------- | -------- |
-| `notify`     | Send Message Display like (MSG) | ok       |
-| `whoami`     | Display Hostname\Username       | ok       |
-| `sptest`     | Speaker Test Stereo             | ok       |
-| `xbrightnes` | Set External Monitor Brightnes  | ok       |
+| Command      | Fungsi                                             | progress |
+| ------------ | -------------------------------------------------- | -------- |
+| `notify`     | Send Message Display like (MSG)                    | ok       |
+| `whoami`     | Display Hostname\Username                          | ok       |
+| `sptest`     | Speaker Test Stereo                                | ok       |
+| `xbrightnes` | Set External Monitor Brightnes                     | ok       |
+| `htop`       | [Ntop For Windows](https://github.com/gsass1/NTop) | ok       |
+| `wget`       | Downloading File over network                      | ok       |
 
 
 
@@ -115,7 +117,7 @@ Setelah berhasil, file executable akan tersedia di folder `bin/`.
 
 ---
 
-| Command    | Fungsi                  | progress | 
+| Command    | Fungsi                  | progress |
 | ---------- | ----------------------- | -------- |
 | `which`    | cari executable di PATH | ok       |
 | `basename` | ambil nama file         |
