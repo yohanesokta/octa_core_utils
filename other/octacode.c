@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <direct.h> // _getcwd
+#include <direct.h> 
 #include <sys/stat.h>
 #include <errno.h>
 #include "cJSON.h"
@@ -67,9 +67,9 @@ int write_file(const char *filename, const char *data)
     return 1;
 }
 
-// Update atau tambah setting
+
 void update_setting(const char *key, int value) {
-    // Baca file
+    
     char *json_data = read_file(config_path);
     cJSON *root = NULL;
 
@@ -82,16 +82,15 @@ void update_setting(const char *key, int value) {
         }
     } else {
         free(json_data);
-        root = cJSON_CreateObject(); // file tidak ada atau kosong
+        root = cJSON_CreateObject(); 
     }
 
-    // Hapus key lama kalau ada
+    
     cJSON_DeleteItemFromObject(root, key);
 
-    // Tambahkan key baru
     cJSON_AddNumberToObject(root, key, value);
 
-    // Tulis kembali
+    
     char *out = cJSON_Print(root);
     if (!write_file(config_path, out)) {
         fprintf(stderr, "Failed to write to %s\n", config_path);
