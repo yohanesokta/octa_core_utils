@@ -6,9 +6,9 @@
 #include <errno.h>
 #include "cJSON.h"
 
-#define PATH_MAX 4096
+#define SIZE_PATH_MAX 4096
 
-char config_path[PATH_MAX];
+char config_path[SIZE_PATH_MAX];
 
 int ensure_folder(const char *path)
 {
@@ -21,14 +21,14 @@ int ensure_folder(const char *path)
 
 void init_config_path()
 {
-    char cwd[PATH_MAX];
+    char cwd[SIZE_PATH_MAX];
     if (_getcwd(cwd, sizeof(cwd)) != NULL)
     {
-        char vscode_folder[PATH_MAX];
-        snprintf(vscode_folder, PATH_MAX, "%s\\.vscode", cwd);
+        char vscode_folder[SIZE_PATH_MAX];
+        snprintf(vscode_folder, SIZE_PATH_MAX, "%s\\.vscode", cwd);
         ensure_folder(vscode_folder);
 
-        snprintf(config_path, PATH_MAX, "%s\\.vscode\\settings.json", cwd);
+        snprintf(config_path, SIZE_PATH_MAX, "%s\\.vscode\\settings.json", cwd);
     }
     else
     {

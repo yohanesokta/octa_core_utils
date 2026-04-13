@@ -21,6 +21,7 @@ int main(int argc, char *argv[]) {
     int show_all = 0;
     int long_mode = 0;
     int long_long = 0;
+    char* cwd = ".";
 
     for (int i = 1; i < argc; i++) {
 
@@ -36,8 +37,19 @@ int main(int argc, char *argv[]) {
         }
     }
 
+
+    if (show_all == 0 && long_mode == 0 && long_long == 0) {
+        if (argc > 1) {
+            cwd = malloc(strlen(argv[1]) + 2);
+            sprintf(cwd, "%s/*", argv[1]);
+        }
+    } else if (argc > 2) {
+        cwd = malloc(strlen(argv[argc - 1]) + 2);
+        sprintf(cwd, "%s/*", argv[argc - 1]);
+    }
+
     WIN32_FIND_DATA fd;
-    HANDLE h = FindFirstFile("*", &fd);
+    HANDLE h = FindFirstFile(cwd, &fd);
 
     if (h == INVALID_HANDLE_VALUE)
         return 1;

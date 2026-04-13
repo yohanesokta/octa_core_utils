@@ -7,10 +7,18 @@
 
 
 # Cara Install / How To Install
+![Windows 11](https://img.shields.io/badge/Windows%2011-%230079d5.svg?style=for-the-badge&logo=Windows%2011&logoColor=white)
 
 ### Installers (x64)
 
 [![Download for Windows](https://img.shields.io/badge/Download%20for-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/yohanesokta/octa_core_utils/releases/download/1.0/octacore-installer.exe)
+
+### WinGet
+
+
+```bash
+winget install yohanesokta.octacoreutils
+```
 
 ### Windows PowerShell (x86-64)
 ```powershell

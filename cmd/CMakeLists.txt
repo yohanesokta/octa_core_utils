@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION 3.10)
 
+
+set(CMAKE_C_COMPILER "gcc")
+set(CMAKE_CXX_COMPILER "g++")
+
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/../bin)
 set(CMAKE_C_FLAGS_RELEASE "-Os -s")
 
@@ -15,6 +19,16 @@ set(CMAKE_CXX_STANDARD 17)
 project(octa_core_utils_cmd)
 
 file(GLOB TOOLS "*.c")
+
+set (EXCLUDE_FILES "")
+if (NOT MSVC)
+    message(STATUS "Building for non-Windows platform, excluding Windows-specific tools.\n")
+    set(EXCLUDE_FILES "sptest.c" "xbrightnes.c")
+endif()
+
+foreach(ex ${EXCLUDE_FILES})
+    list(FILTER TOOLS EXCLUDE REGEX "${ex}$")
+endforeach()
 
 foreach(src ${TOOLS})
     get_filename_component(name ${src} NAME_WE)
